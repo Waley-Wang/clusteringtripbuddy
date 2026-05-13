@@ -12,7 +12,7 @@ app.use(cors()); // Allow all origins
 
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(__dirname + '..\\trip-planner\\dist'));
+app.use('/', express.static(__dirname + '\\..\\trip-planner\\dist'));
 
 app.use('/api/clustering', clusteringRouter);
 
@@ -27,5 +27,5 @@ app.get('/api/locations', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(__dirname + '..\\trip-planner\\dist');
 });
