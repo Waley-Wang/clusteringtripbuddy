@@ -2,6 +2,7 @@ const express = require('express');
 cluster_runner = require('./clustering_runner.js');
 const cors = require('cors');
 const clusteringRouter = require('./clustering.js');
+const path = require("path");
 const mongoose = require("mongoose");
 const Location = require("./model/Location");
 const app = express();
@@ -11,7 +12,7 @@ app.use(cors()); // Allow all origins
 
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static('C:\\Users\\wagn5\\Downloads\\Trip-Planning-App\\trip-planner\\dist'));
+app.use(express.static(__dirname + '..\\trip-planner\\dist'));
 
 app.use('/api/clustering', clusteringRouter);
 
