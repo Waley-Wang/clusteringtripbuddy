@@ -1,0 +1,33 @@
+#mapviewcontainer {
+    height: 90vh;
+    width: 50%;
+}
+
+#mapview {
+    height: 80%;
+    width: 100%;
+}
+
+#mapcontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 75vh;
+}
+
+#pointlist {
+    width : 50%;
+    height : 70vh;
+    overflow-y: auto;
+}
+
+.activitycol {
+    width: 50%;
+}
+
+.clustercol {
+    width: 25%;
+}
+.delcol {
+    width: 25%;
+}

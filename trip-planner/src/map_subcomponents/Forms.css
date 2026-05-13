@@ -1,0 +1,27 @@
+#formtray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    box-sizing: border-box;
+}
+
+fieldset {
+    background-color: black;;
+}
+
+#clusterform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#minclusters, #maxclusters {
+    width: 10%;
+    margin: 0 10px;
+}
