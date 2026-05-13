@@ -13,3 +13,8 @@ Contact Email: wwang118@terpmail.umd.edu
 Deployed App Link: https://youtu.be/ygGAWfJNE4U
 
 AI Use: Copilot (mostly for information)
+
+Important!
+
+There are two npm packages here, one for frontend and 1 for backend. If trying to build locally, use
+the build.sh and run.sh scripts!
