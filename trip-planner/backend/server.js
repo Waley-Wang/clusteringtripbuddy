@@ -8,7 +8,6 @@ const Location = require("./model/Location");
 const app = express();
 app.use(express.json())
 app.use(cors()); // Allow all origins
-const path = require('path');
 
 
 const PORT = process.env.PORT || 3000;
@@ -28,5 +27,5 @@ app.get('/api/locations', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(__dirname + '..\\trip-planner\\dist');
+    console.log(path.resolve(__dirname, '..', 'trip-planner', 'dist'));
 });
