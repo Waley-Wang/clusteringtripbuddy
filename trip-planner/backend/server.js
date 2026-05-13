@@ -8,11 +8,12 @@ const Location = require("./model/Location");
 const app = express();
 app.use(express.json())
 app.use(cors()); // Allow all origins
+const path = require('path');
 
 
 const PORT = process.env.PORT || 3000;
 
-app.use('/', express.static(__dirname + '/../trip-planner/dist'));
+app.use('/', express.static(path.resolve(__dirname, '..', 'trip-planner', 'dist')));
 
 app.use('/api/clustering', clusteringRouter);
 
