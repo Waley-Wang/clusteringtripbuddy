@@ -4,12 +4,12 @@ Group Members: Waley Wang (wwang118)
 
 App Description: Deduces stops from user inputted attractions using clustering algorithms
 
-Youtube Video Link:
+Youtube Video Link: https://clusteringtripbuddy.onrender.com/
 
 APIs: Random Word Generation (https://random-word-api.herokuapp.com), OpenStreetMap (through leaflet.js)
 
 Contact Email: wwang118@terpmail.umd.edu
 
-Deployed App Link:
+Deployed App Link: https://youtu.be/ygGAWfJNE4U
 
 AI Use: Copilot (mostly for information)
