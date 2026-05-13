@@ -1,9 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const path = require("path");
-require("dotenv").config({
-   path: path.resolve(__dirname, "credentialsDontPost/.env"),
-});
 const mongoose = require("mongoose");
 const Location = require("./model/Location");
 

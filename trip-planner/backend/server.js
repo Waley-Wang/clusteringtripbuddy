@@ -2,10 +2,6 @@ const express = require('express');
 cluster_runner = require('./clustering_runner.js');
 const cors = require('cors');
 const clusteringRouter = require('./clustering.js');
-const path = require("path");
-require("dotenv").config({
-   path: path.resolve(__dirname, "credentialsDontPost/.env"),
-});
 const mongoose = require("mongoose");
 const Location = require("./model/Location");
 const app = express();
