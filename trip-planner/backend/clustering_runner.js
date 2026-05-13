@@ -1,11 +1,12 @@
 const { spawn } = require('child_process');
+const path = require("path");
 
 async function spawnClusteringScript(input_data, min_clusters = 1, max_clusters = 1) {
     return new Promise((resolve, reject) => {
         let data_obj = [];
         let num_clusters = 0;
 
-        const process = spawn('python3', ['./python_scripts/kmeans_clustering.py',
+        const process = spawn('python3', [path.resolve(__dirname, 'python_scripts', 'kmeans_clustering.py'),
                                           "--min_clusters", min_clusters,
                                           "--max_clusters", max_clusters]);
 
@@ -37,5 +38,7 @@ async function spawnClusteringScript(input_data, min_clusters = 1, max_clusters 
         process.stdin.end();  
     });
 }
+
+console.log(path.resolve(__dirname, 'python_scripts', 'kmeans_clustering.py'));
 
 module.exports = { spawnClusteringScript };
