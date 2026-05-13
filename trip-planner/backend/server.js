@@ -12,7 +12,7 @@ app.use(cors()); // Allow all origins
 
 const PORT = process.env.PORT || 3000;
 
-app.use('/', express.static(path.resolve(__dirname, '..', 'trip-planner', 'dist')));
+app.use('/', express.static(path.resolve(__dirname, '..', 'dist')));
 
 app.use('/api/clustering', clusteringRouter);
 
@@ -27,5 +27,5 @@ app.get('/api/locations', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(path.resolve(__dirname, '..', 'trip-planner', 'dist'));
+    console.log(path.resolve(__dirname, '..', 'dist'));
 });
